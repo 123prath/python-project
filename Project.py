@@ -1,0 +1,455 @@
+from tkinter import *
+from tkinter.ttk import *
+from PIL import Image,ImageTk
+
+
+window=Tk()
+window.geometry('1180x1200')
+
+#changes to be done
+#unknown mwnu
+#photo
+#little place adjustment
+
+
+# -----image-----
+image=Image.open("C:\\Users\\admin\\Desktop\\ad.jpg")
+photo=ImageTk.PhotoImage(image)
+lbl=Label(window,image=photo)
+lbl.pack(padx=0,pady=0)
+
+def calculate():
+    a1=e1.get()
+    a2=e2.get()
+    a3=e3.get()
+    a4=e4.get()
+    a5=e5.get()
+    a6=e6.get()
+    a7=e7.get()
+    a8=e8.get()
+    a9=e9.get()
+    a10=e10.get()
+    a11=e11.get()
+    a12=e12.get()
+    a13=e13.get()
+    a14=e14.get()
+    a15=e15.get()
+    a16=e16.get()
+    a17=e17.get()
+    a18=e18.get()
+    a19=e19.get()
+    a20=e20.get()
+    a21=e21.get()
+    a22=e22.get()
+    a23=e23.get()
+    a24=e24.get()
+    a25=e25.get()
+    a26=e26.get()
+    a27=e27.get()
+    a28=e28.get()
+    a29=e29.get()
+    a30=e30.get()
+    a31=e31.get()
+    a32=e32.get()
+    a34=e34.get()
+    a35=e35.get()
+    a36=e36.get()
+    a37=e37.get()
+    a38=e38.get()
+    a39=e39.get()
+    a40=e40.get()
+    a41=e41.get()
+    a42=e42.get()
+    a43=e43.get()
+    a44=e44.get()
+    a45=e45.get()
+    a47=e47.get()
+    a48=e48.get()
+    a49=e49.get()
+    a50=e50.get()
+    a51=e51.get()
+    a52=e52.get()
+    a53=e53.get()
+    a54=e54.get()
+    a55=e55.get()
+    a56=e56.get()
+    a57=e57.get()
+    a58=e58.get()
+
+
+    total=((int(a1)*20)+(int(a2)*20)+(int(a3)*40)+(int(a4)*40)+(int(a5)*40)+(int(a6)*35)+(int(a7)*25)+(int(a8)*8)+(int(a9)*10)+(int(a10)*30)+(int(a11)*50)+(int(a12)*60)+(int(a13)*30)+(int(a14)*60)+(int(a15)*70)+(int(a16)*80)+(int(a17)*130)+(int(a18)*100)+(int(a19)*90)+(int(a20)*70)+(int(a21)*80)+(int(a22)*100)+(int(a23)*40)+(int(a24)*30)+(int(a25)*40)+(int(a26)*15)+(int(a27)*20)+(int(a28)*10)+(int(a29)*160)+(int(a30)*160)+(int(a31)*160)+(int(a32)*160)+(int(a34)*180)+(int(a35)*180)+(int(a36)*180)+(int(a37)*160)+(int(a38)*160)+(int(a39)*160)+(int(a40)*160)+(int(a41)*180)+(int(a42)*180)+(int(a43)*180)+(int(a44)*240)+(int(a45)*270)+(int(a47)*170)+(int(a48)*240)+(int(a49)*250)+(int(a50)*240)+(int(a51)*270)+(int(a52)*240)+(int(a53)*150)+(int(a54)*140)+(int(a55)*200)+(int(a56)*200)+(int(a57)*180)+(int(a58)*150))
+    print(total)
+    labelbill = Label(window, text='TOTAL BILL:{}'.format(total), font="times 18")
+    labelbill.place(x=530, y=650)
+
+#Labels
+
+labela1=Label(window,text='COLD/BEVERAGE',font="times 12 bold")
+labela1.place(x=40,y=40)
+
+labela2=Label(window,text='ROTI/NAAN',font="times 12 bold")
+labela2.place(x=305,y=40)
+
+labela3=Label(window,text='RICE/DAL',font="times 12 bold")
+labela3.place(x=810,y=40)
+
+labela4=Label(window,text='SALAD/PAPAD',font="times 12 bold")
+labela4.place(x=1105,y=40)
+
+labela5=Label(window,text='PANEER',font="times 12 bold")
+labela5.place(x=20,y=360)
+
+labela5=Label(window,text='unknown',font="times 12 bold")
+labela5.place(x=305,y=360)
+
+labela6=Label(window,text='BIRYANI/CURRIES',font="times 12 bold")
+labela6.place(x=810,y=360)
+
+labela7=Label(window,text='KABAB',font="times 12 bold")
+labela7.place(x=1105,y=360)
+#------------entry-------------
+label1=Label(window,text='Bisleri                             Rs 20',font="times 10 bold")
+label1.place(x=20,y=60)
+e1=Entry(window)
+e1.insert(0,int(0))
+e1.place(x=20,y=80)
+
+label2=Label(window,text='Cold 300ml                     Rs 20',font="times 10 bold")
+label2.place(x=20,y=100)
+e2=Entry(window)
+e2.insert(0,int(0))
+e2.place(x=20,y=120)
+
+label3=Label(window,text='Cold 500ml                     Rs 40',font="times 10 bold")
+label3.place(x=20,y=140)
+e3=Entry(window)
+e3.insert(0,int(0))
+e3.place(x=20,y=160)
+
+label4=Label(window,text='Soda 500ml                    Rs 40',font="times 10 bold")
+label4.place(x=20,y=180)
+e4=Entry(window)
+e4.insert(0,int(0))
+e4.place(x=20,y=200)
+
+label5=Label(window,text='Fresh Lime Soda           Rs 40',font="times 10 bold ")
+label5.place(x=20,y=220)
+e5=Entry(window)
+e5.insert(0,int(0))
+e5.place(x=20,y=240)
+
+label6=Label(window,text='Lassi Sweet/Salty         Rs 35',font="times 10 bold")
+label6.place(x=20,y=260)
+e6=Entry(window)
+e6.insert(0,int(0))
+e6.place(x=20,y=280)
+
+label7=Label(window,text='Butter Milk                    Rs 25',font="times 10 bold")
+label7.place(x=20,y=300)
+e7=Entry(window)
+e7.insert(0,int(0))
+e7.place(x=20,y=320)
+
+label8=Label(window,text='Chapati                             Rs 08',font="times 10 bold ")
+label8.place(x=305,y=60)
+e8=Entry(window)
+e8.insert(0,int(0))
+e8.place(x=305,y=80)
+
+label9=Label(window,text='Roti                                   Rs 10',font="times 10 bold")
+label9.place(x=305,y=100)
+e9=Entry(window)
+e9.insert(0,int(0))
+e9.place(x=305,y=120)
+
+label10=Label(window,text='Naan                                 Rs 30',font="times 10 bold")
+label10.place(x=305,y=140)
+e10=Entry(window)
+e10.insert(0,int(0))
+e10.place(x=305,y=160)
+
+label11=Label(window,text='Garlic Naan                      Rs 50',font="times 10 bold")
+label11.place(x=305,y=180)
+e11=Entry(window)
+e11.insert(0,int(0))
+e11.place(x=305,y=200)
+
+label12=Label(window,text='Cheese Garlic Naan        Rs 60',font="times 10 bold")
+label12.place(x=305,y=220)
+e12=Entry(window)
+e12.insert(0,int(0))
+e12.place(x=305,y=240)
+
+label13=Label(window,text='Paratha                             Rs 30',font="times 10 bold")
+label13.place(x=305,y=260)
+e13=Entry(window)
+e13.insert(0,int(0))
+e13.place(x=305,y=280)
+
+label14=Label(window,text='Stuff Paratha                    Rs 60',font="times 10 bold")
+label14.place(x=305,y=300)
+e14=Entry(window)
+e14.insert(0,int(0))
+e14.place(x=305,y=320)
+
+label15=Label(window,text='Plain Rice                       Rs 70',font="times 10 bold ")
+label15.place(x=810,y=60)
+e15=Entry(window)
+e15.insert(0,int(0))
+e15.place(x=810,y=80)
+
+label16=Label(window,text='Jeera Rice                       Rs 80',font="times 10 bold")
+label16.place(x=810,y=100)
+e16=Entry(window)
+e16.insert(0,int(0))
+e16.place(x=810,y=120)
+
+label17=Label(window,text='Veg Biryani                    Rs 130',font="times 10 bold")
+label17.place(x=810,y=140)
+e17=Entry(window)
+e17.insert(0,int(0))
+e17.place(x=810,y=160)
+
+label18=Label(window,text='Dal Makhani                   Rs 100',font="times 10 bold")
+label18.place(x=810,y=180)
+e18=Entry(window)
+e18.insert(0,int(0))
+e18.place(x=810,y=200)
+
+label19=Label(window,text='Dal Kolhapuri                 Rs 90',font="times 10 bold")
+label19.place(x=810,y=220)
+e19=Entry(window)
+e19.insert(0,int(0))
+e19.place(x=810,y=240)
+
+label20=Label(window,text='Dal Fry                             Rs 70',font="times 10 bold")
+label20.place(x=810,y=260)
+e20=Entry(window)
+e20.insert(0,int(0))
+e20.place(x=810,y=280)
+
+label21=Label(window,text='Dal Tadka                         Rs 80',font="times 10 bold")
+label21.place(x=810,y=300)
+e21=Entry(window)
+e21.insert(0,int(0))
+e21.place(x=810,y=320)
+
+label22=Label(window,text='Family Salad                     Rs 100',font="times 10 bold ")
+label22.place(x=1105,y=60)
+e22=Entry(window)
+e22.insert(0,int(0))
+e22.place(x=1105,y=80)
+
+label23=Label(window,text='Green Salad                      Rs 40',font="times 10 bold")
+label23.place(x=1105,y=100)
+e23=Entry(window)
+e23.insert(0,int(0))
+e23.place(x=1105,y=120)
+
+label24=Label(window,text='Cuchumber Salad            Rs 30',font="times 10 bold")
+label24.place(x=1105,y=140)
+e24=Entry(window)
+e24.insert(0,int(0))
+e24.place(x=1105,y=160)
+
+label25=Label(window,text='Onion Salad                      Rs 40',font="times 10 bold")
+label25.place(x=1105,y=180)
+e25=Entry(window)
+e25.insert(0,int(0))
+e25.place(x=1105,y=200)
+
+label26=Label(window,text='Fried Papad                       Rs 15',font="times 10 bold")
+label26.place(x=1105,y=220)
+e26=Entry(window)
+e26.insert(0,int(0))
+e26.place(x=1105,y=240)
+
+label27=Label(window,text='Masala Papad                    Rs 20',font="times 10 bold")
+label27.place(x=1105,y=260)
+e27=Entry(window)
+e27.insert(0,int(0))
+e27.place(x=1105,y=280)
+
+label28=Label(window,text='Roasted Papad                  Rs 10',font="times 10 bold")
+label28.place(x=1105,y=300)
+e28=Entry(window)
+e28.insert(0,int(0))
+e28.place(x=1105,y=320)
+
+
+labe29=Label(window,text='Paneer Butter Masala        Rs 160',font="times 10 bold ")
+labe29.place(x=20,y=380)
+e29=Entry(window)
+e29.insert(0,int(0))
+e29.place(x=20,y=400)
+
+label30=Label(window,text='Paneer kadai                       Rs 160',font="times 10 bold")
+label30.place(x=20,y=420)
+e30=Entry(window)
+e30.insert(0,int(0))
+e30.place(x=20,y=440)
+
+label31=Label(window,text='Palak Paneer                      Rs 160r',font="times 10 bold")
+label31.place(x=20,y=460)
+e31=Entry(window)
+e31.insert(0,int(0))
+e31.place(x=20,y=480)
+
+label32=Label(window,text='Handi Paneer                      Rs 160',font="times 10 bold")
+label32.place(x=20,y=500)
+e32=Entry(window)
+e32.insert(0,int(0))
+e32.place(x=20,y=520)
+
+label34=Label(window,text='Paneer Burji                       Rs 180',font="times 10 bold")
+label34.place(x=20,y=540)
+e34=Entry(window)
+e34.insert(0,int(0))
+e34.place(x=20,y=560)
+
+label35=Label(window,text='Paneer Kofta                        Rs 180',font="times 10 bold")
+label35.place(x=20,y=580)
+e35=Entry(window)
+e35.insert(0,int(0))
+e35.place(x=20,y=600)
+
+label36=Label(window,text='Paneer Masala                    Rs 180',font="times 10 bold")
+label36.place(x=20,y=620)
+e36=Entry(window)
+e36.insert(0,int(0))
+e36.place(x=20,y=640)
+
+label37=Label(window,text='Chapati                             Rs 08',font="times 10 bold ")
+label37.place(x=305,y=380)
+e37=Entry(window)
+e37.insert(0,int(0))
+e37.place(x=305,y=400)
+
+label38=Label(window,text='Roti                                   Rs 10',font="times 10 bold")
+label38.place(x=305,y=420)
+e38=Entry(window)
+e38.insert(0,int(0))
+e38.place(x=305,y=440)
+
+label39=Label(window,text='Naan                                 Rs 30',font="times 10 bold")
+label39.place(x=305,y=460)
+e39=Entry(window)
+e39.insert(0,int(0))
+e39.place(x=305,y=480)
+
+label40=Label(window,text='Garlic Naan                      Rs 50',font="times 10 bold")
+label40.place(x=305,y=500)
+e40=Entry(window)
+e40.insert(0,int(0))
+e40.place(x=305,y=520)
+
+label41=Label(window,text='Cheese Garlic Naan        Rs 60',font="times 10 bold")
+label41.place(x=305,y=540)
+e41=Entry(window)
+e41.insert(0,int(0))
+e41.place(x=305,y=560)
+
+label42=Label(window,text='Paratha                             Rs 30',font="times 10 bold")
+label42.place(x=305,y=580)
+e42=Entry(window)
+e42.insert(0,int(0))
+e42.place(x=305,y=600)
+
+label43=Label(window,text='Stuff Paratha                    Rs 60',font="times 10 bold")
+label43.place(x=305,y=620)
+e43=Entry(window)
+e43.insert(0,int(0))
+e43.place(x=305,y=640)
+
+label44=Label(window,text='Chicken Biryani                       Rs 240',font="times 10 bold ")
+label44.place(x=810,y=380)
+e44=Entry(window)
+e44.insert(0,int(0))
+e44.place(x=810,y=400)
+
+label45=Label(window,text='Mutton Biryani                          Rs 270',font="times 10 bold")
+label45.place(x=810,y=420)
+e45=Entry(window)
+e45.insert(0,int(0))
+e45.place(x=810,y=440)
+
+label47=Label(window,text='Egg Biryani                                 Rs 170',font="times 10 bold")
+label47.place(x=810,y=460)
+e47=Entry(window)
+e47.insert(0,int(0))
+e47.place(x=810,y=480)
+
+label48=Label(window,text='Chicken Curry                           Rs 240',font="times 10 bold")
+label48.place(x=810,y=500)
+e48=Entry(window)
+e48.insert(0,int(0))
+e48.place(x=810,y=520)
+
+label49=Label(window,text='Butter Chicken Boneless        Rs 250',font="times 10 bold")
+label49.place(x=810,y=540)
+e49=Entry(window)
+e49.insert(0,int(0))
+e49.place(x=810,y=560)
+
+label50=Label(window,text='Chicken Chill Masala               Rs 240',font="times 10 bold")
+label50.place(x=810,y=580)
+e50=Entry(window)
+e50.insert(0,int(0))
+e50.place(x=810,y=600)
+
+label51=Label(window,text='Mutton Masala                            Rs 270',font="times 10 bold")
+label51.place(x=810,y=620)
+e51=Entry(window)
+e51.insert(0,int(0))
+e51.place(x=810,y=640)
+
+label52=Label(window,text='Chicken Tandoori Kabab                Rs 240',font="times 10 bold ")
+label52.place(x=1105,y=380)
+e52=Entry(window)
+e52.insert(0,int(0))
+e52.place(x=1105,y=400)
+
+label53=Label(window,text='Chicken Tangdi Kabab                    Rs 150',font="times 10 bold")
+label53.place(x=1105,y=420)
+e53=Entry(window)
+e53.insert(0,int(0))
+e53.place(x=1105,y=440)
+
+label54=Label(window,text='Chicken Tikka Kabab                     Rs 140',font="times 10 bold")
+label54.place(x=1105,y=460)
+e54=Entry(window)
+e54.insert(0,int(0))
+e54.place(x=1105,y=480)
+
+label55=Label(window,text='Chicken Dum Kabab (8Pcs.)          Rs 200',font="times 10 bold")
+label55.place(x=1105,y=500)
+e55=Entry(window)
+e55.insert(0,int(0))
+e55.place(x=1105,y=520)
+
+label56=Label(window,text='Chicken Podi Kabab (8Pcs.)          Rs 200',font="times 10 bold")
+label56.place(x=1105,y=540)
+e56=Entry(window)
+e56.insert(0,int(0))
+e56.place(x=1105,y=560)
+
+label57=Label(window,text='Chicken Cheese Kabab                   Rs 180',font="times 10 bold")
+label57.place(x=1105,y=580)
+e57=Entry(window)
+e57.insert(0,int(0))
+e57.place(x=1105,y=600)
+
+label58=Label(window,text='Chicken Alishan Kabab                  Rs 150',font="times 10 bold")
+label58.place(x=1105,y=620)
+e58=Entry(window)
+e58.insert(0,int(0))
+e58.place(x=1105,y=640)
+
+
+#------button-------
+b1=Button(window,text='Bill',width=20,command=calculate)
+b1.place(x=550,y=600)
+
+window.mainloop()
+
+
